@@ -3,6 +3,10 @@ const sequelize = require('../config/db');
 const app = express()
 const port = 3000
 
+const Professor = require('./model/Teacher');
+const Participant = require('./model/Participant');
+const Calendar = require('./model/Calendar');
+
 async function runServer() {
     try {
         await sequelize.authenticate();
